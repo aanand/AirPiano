@@ -14,9 +14,9 @@
 		E26BA64E16DD33240036B1F7 /* APAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA64D16DD33240036B1F7 /* APAppDelegate.m */; };
 		E26BA65116DD33240036B1F7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26BA64F16DD33240036B1F7 /* MainMenu.xib */; };
 		E26BA65E16DD33C80036B1F7 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA65D16DD33C80036B1F7 /* Sample.m */; };
-		E26BA66216DD33E00036B1F7 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = E26BA65B16DD33970036B1F7 /* LeapObjectiveC.mm */; };
-		E26BA66416DD34350036B1F7 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E26BA66316DD34350036B1F7 /* libLeap.dylib */; };
-		E26BA66516DD34830036B1F7 /* libLeap.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E26BA66316DD34350036B1F7 /* libLeap.dylib */; };
+		E26BA66816DD37590036B1F7 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E26BA66716DD37590036B1F7 /* libLeap.dylib */; };
+		E26BA66D16DD37600036B1F7 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = E26BA66C16DD37600036B1F7 /* LeapObjectiveC.mm */; };
+		E26BA66E16DD378A0036B1F7 /* libLeap.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E26BA66716DD37590036B1F7 /* libLeap.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +33,13 @@
 		E26BA64C16DD33240036B1F7 /* APAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APAppDelegate.h; sourceTree = "<group>"; };
 		E26BA64D16DD33240036B1F7 /* APAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APAppDelegate.m; sourceTree = "<group>"; };
 		E26BA65016DD33240036B1F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E26BA65816DD33970036B1F7 /* Leap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
-		E26BA65916DD33970036B1F7 /* LeapMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
-		E26BA65A16DD33970036B1F7 /* LeapObjectiveC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
-		E26BA65B16DD33970036B1F7 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
 		E26BA65C16DD33C80036B1F7 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sample.h; path = AirPiano/Sample.h; sourceTree = "<group>"; };
 		E26BA65D16DD33C80036B1F7 /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sample.m; path = AirPiano/Sample.m; sourceTree = "<group>"; };
-		E26BA66316DD34350036B1F7 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		E26BA66716DD37590036B1F7 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = Leap/libLeap.dylib; sourceTree = "<group>"; };
+		E26BA66916DD37600036B1F7 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leap.h; path = Leap/Leap.h; sourceTree = "<group>"; };
+		E26BA66A16DD37600036B1F7 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = Leap/LeapMath.h; sourceTree = "<group>"; };
+		E26BA66B16DD37600036B1F7 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapObjectiveC.h; path = Leap/LeapObjectiveC.h; sourceTree = "<group>"; };
+		E26BA66C16DD37600036B1F7 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LeapObjectiveC.mm; path = Leap/LeapObjectiveC.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26BA63B16DD33240036B1F7 /* Cocoa.framework in Frameworks */,
-				E26BA66416DD34350036B1F7 /* libLeap.dylib in Frameworks */,
+				E26BA66816DD37590036B1F7 /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 		E26BA63916DD33240036B1F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E26BA66316DD34350036B1F7 /* libLeap.dylib */,
+				E26BA66716DD37590036B1F7 /* libLeap.dylib */,
 				E26BA63A16DD33240036B1F7 /* Cocoa.framework */,
 				E26BA63C16DD33240036B1F7 /* Other Frameworks */,
 			);
@@ -119,10 +119,10 @@
 		E26BA65716DD33880036B1F7 /* Leap */ = {
 			isa = PBXGroup;
 			children = (
-				E26BA65816DD33970036B1F7 /* Leap.h */,
-				E26BA65916DD33970036B1F7 /* LeapMath.h */,
-				E26BA65A16DD33970036B1F7 /* LeapObjectiveC.h */,
-				E26BA65B16DD33970036B1F7 /* LeapObjectiveC.mm */,
+				E26BA66916DD37600036B1F7 /* Leap.h */,
+				E26BA66A16DD37600036B1F7 /* LeapMath.h */,
+				E26BA66B16DD37600036B1F7 /* LeapObjectiveC.h */,
+				E26BA66C16DD37600036B1F7 /* LeapObjectiveC.mm */,
 				E26BA65C16DD33C80036B1F7 /* Sample.h */,
 				E26BA65D16DD33C80036B1F7 /* Sample.m */,
 			);
@@ -182,7 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26BA66516DD34830036B1F7 /* libLeap.dylib in Resources */,
+				E26BA66E16DD378A0036B1F7 /* libLeap.dylib in Resources */,
 				E26BA64516DD33240036B1F7 /* InfoPlist.strings in Resources */,
 				E26BA64B16DD33240036B1F7 /* Credits.rtf in Resources */,
 				E26BA65116DD33240036B1F7 /* MainMenu.xib in Resources */,
@@ -212,10 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E26BA66216DD33E00036B1F7 /* LeapObjectiveC.mm in Sources */,
 				E26BA64716DD33240036B1F7 /* main.m in Sources */,
 				E26BA64E16DD33240036B1F7 /* APAppDelegate.m in Sources */,
 				E26BA65E16DD33C80036B1F7 /* Sample.m in Sources */,
+				E26BA66D16DD37600036B1F7 /* LeapObjectiveC.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +319,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Leap\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -336,6 +337,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Leap\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
