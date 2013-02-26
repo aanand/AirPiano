@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E26BA63B16DD33240036B1F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26BA63A16DD33240036B1F7 /* Cocoa.framework */; };
+		E26BA64516DD33240036B1F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E26BA64316DD33240036B1F7 /* InfoPlist.strings */; };
+		E26BA64716DD33240036B1F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA64616DD33240036B1F7 /* main.m */; };
+		E26BA64B16DD33240036B1F7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E26BA64916DD33240036B1F7 /* Credits.rtf */; };
+		E26BA64E16DD33240036B1F7 /* APAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA64D16DD33240036B1F7 /* APAppDelegate.m */; };
+		E26BA65116DD33240036B1F7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26BA64F16DD33240036B1F7 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E26BA63716DD33240036B1F7 /* AirPiano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirPiano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26BA63A16DD33240036B1F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E26BA63D16DD33240036B1F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E26BA63E16DD33240036B1F7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E26BA63F16DD33240036B1F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E26BA64216DD33240036B1F7 /* AirPiano-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirPiano-Info.plist"; sourceTree = "<group>"; };
+		E26BA64416DD33240036B1F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E26BA64616DD33240036B1F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E26BA64816DD33240036B1F7 /* AirPiano-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirPiano-Prefix.pch"; sourceTree = "<group>"; };
+		E26BA64A16DD33240036B1F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E26BA64C16DD33240036B1F7 /* APAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APAppDelegate.h; sourceTree = "<group>"; };
+		E26BA64D16DD33240036B1F7 /* APAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APAppDelegate.m; sourceTree = "<group>"; };
+		E26BA65016DD33240036B1F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E26BA63416DD33240036B1F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26BA63B16DD33240036B1F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E26BA62E16DD33240036B1F7 = {
+			isa = PBXGroup;
+			children = (
+				E26BA64016DD33240036B1F7 /* AirPiano */,
+				E26BA63916DD33240036B1F7 /* Frameworks */,
+				E26BA63816DD33240036B1F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E26BA63816DD33240036B1F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E26BA63716DD33240036B1F7 /* AirPiano.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E26BA63916DD33240036B1F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E26BA63A16DD33240036B1F7 /* Cocoa.framework */,
+				E26BA63C16DD33240036B1F7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E26BA63C16DD33240036B1F7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E26BA63D16DD33240036B1F7 /* AppKit.framework */,
+				E26BA63E16DD33240036B1F7 /* CoreData.framework */,
+				E26BA63F16DD33240036B1F7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E26BA64016DD33240036B1F7 /* AirPiano */ = {
+			isa = PBXGroup;
+			children = (
+				E26BA64C16DD33240036B1F7 /* APAppDelegate.h */,
+				E26BA64D16DD33240036B1F7 /* APAppDelegate.m */,
+				E26BA64F16DD33240036B1F7 /* MainMenu.xib */,
+				E26BA64116DD33240036B1F7 /* Supporting Files */,
+			);
+			path = AirPiano;
+			sourceTree = "<group>";
+		};
+		E26BA64116DD33240036B1F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E26BA64216DD33240036B1F7 /* AirPiano-Info.plist */,
+				E26BA64316DD33240036B1F7 /* InfoPlist.strings */,
+				E26BA64616DD33240036B1F7 /* main.m */,
+				E26BA64816DD33240036B1F7 /* AirPiano-Prefix.pch */,
+				E26BA64916DD33240036B1F7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E26BA63616DD33240036B1F7 /* AirPiano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E26BA65416DD33240036B1F7 /* Build configuration list for PBXNativeTarget "AirPiano" */;
+			buildPhases = (
+				E26BA63316DD33240036B1F7 /* Sources */,
+				E26BA63416DD33240036B1F7 /* Frameworks */,
+				E26BA63516DD33240036B1F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirPiano;
+			productName = AirPiano;
+			productReference = E26BA63716DD33240036B1F7 /* AirPiano.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E26BA62F16DD33240036B1F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Aanand Prasad";
+			};
+			buildConfigurationList = E26BA63216DD33240036B1F7 /* Build configuration list for PBXProject "AirPiano" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E26BA62E16DD33240036B1F7;
+			productRefGroup = E26BA63816DD33240036B1F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E26BA63616DD33240036B1F7 /* AirPiano */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E26BA63516DD33240036B1F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26BA64516DD33240036B1F7 /* InfoPlist.strings in Resources */,
+				E26BA64B16DD33240036B1F7 /* Credits.rtf in Resources */,
+				E26BA65116DD33240036B1F7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E26BA63316DD33240036B1F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26BA64716DD33240036B1F7 /* main.m in Sources */,
+				E26BA64E16DD33240036B1F7 /* APAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E26BA64316DD33240036B1F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E26BA64416DD33240036B1F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E26BA64916DD33240036B1F7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E26BA64A16DD33240036B1F7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E26BA64F16DD33240036B1F7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E26BA65016DD33240036B1F7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E26BA65216DD33240036B1F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E26BA65316DD33240036B1F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E26BA65516DD33240036B1F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirPiano/AirPiano-Prefix.pch";
+				INFOPLIST_FILE = "AirPiano/AirPiano-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E26BA65616DD33240036B1F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirPiano/AirPiano-Prefix.pch";
+				INFOPLIST_FILE = "AirPiano/AirPiano-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E26BA63216DD33240036B1F7 /* Build configuration list for PBXProject "AirPiano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26BA65216DD33240036B1F7 /* Debug */,
+				E26BA65316DD33240036B1F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E26BA65416DD33240036B1F7 /* Build configuration list for PBXNativeTarget "AirPiano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E26BA65516DD33240036B1F7 /* Debug */,
+				E26BA65616DD33240036B1F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E26BA62F16DD33240036B1F7 /* Project object */;
+}
