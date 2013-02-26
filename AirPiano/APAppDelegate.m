@@ -7,12 +7,14 @@
 //
 
 #import "APAppDelegate.h"
+#import "Sample.h"
 
 @implementation APAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	// Insert code here to initialize your application
+    Sample *sample = [[Sample alloc]init];
+    [sample run];
 }
 
 @end

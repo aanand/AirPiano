@@ -13,6 +13,10 @@
 		E26BA64B16DD33240036B1F7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E26BA64916DD33240036B1F7 /* Credits.rtf */; };
 		E26BA64E16DD33240036B1F7 /* APAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA64D16DD33240036B1F7 /* APAppDelegate.m */; };
 		E26BA65116DD33240036B1F7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E26BA64F16DD33240036B1F7 /* MainMenu.xib */; };
+		E26BA65E16DD33C80036B1F7 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = E26BA65D16DD33C80036B1F7 /* Sample.m */; };
+		E26BA66216DD33E00036B1F7 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = E26BA65B16DD33970036B1F7 /* LeapObjectiveC.mm */; };
+		E26BA66416DD34350036B1F7 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E26BA66316DD34350036B1F7 /* libLeap.dylib */; };
+		E26BA66516DD34830036B1F7 /* libLeap.dylib in Resources */ = {isa = PBXBuildFile; fileRef = E26BA66316DD34350036B1F7 /* libLeap.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,13 @@
 		E26BA64C16DD33240036B1F7 /* APAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APAppDelegate.h; sourceTree = "<group>"; };
 		E26BA64D16DD33240036B1F7 /* APAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APAppDelegate.m; sourceTree = "<group>"; };
 		E26BA65016DD33240036B1F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E26BA65816DD33970036B1F7 /* Leap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		E26BA65916DD33970036B1F7 /* LeapMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		E26BA65A16DD33970036B1F7 /* LeapObjectiveC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		E26BA65B16DD33970036B1F7 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		E26BA65C16DD33C80036B1F7 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sample.h; path = AirPiano/Sample.h; sourceTree = "<group>"; };
+		E26BA65D16DD33C80036B1F7 /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sample.m; path = AirPiano/Sample.m; sourceTree = "<group>"; };
+		E26BA66316DD34350036B1F7 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26BA63B16DD33240036B1F7 /* Cocoa.framework in Frameworks */,
+				E26BA66416DD34350036B1F7 /* libLeap.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +58,7 @@
 		E26BA62E16DD33240036B1F7 = {
 			isa = PBXGroup;
 			children = (
+				E26BA65716DD33880036B1F7 /* Leap */,
 				E26BA64016DD33240036B1F7 /* AirPiano */,
 				E26BA63916DD33240036B1F7 /* Frameworks */,
 				E26BA63816DD33240036B1F7 /* Products */,
@@ -63,6 +76,7 @@
 		E26BA63916DD33240036B1F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E26BA66316DD34350036B1F7 /* libLeap.dylib */,
 				E26BA63A16DD33240036B1F7 /* Cocoa.framework */,
 				E26BA63C16DD33240036B1F7 /* Other Frameworks */,
 			);
@@ -102,6 +116,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E26BA65716DD33880036B1F7 /* Leap */ = {
+			isa = PBXGroup;
+			children = (
+				E26BA65816DD33970036B1F7 /* Leap.h */,
+				E26BA65916DD33970036B1F7 /* LeapMath.h */,
+				E26BA65A16DD33970036B1F7 /* LeapObjectiveC.h */,
+				E26BA65B16DD33970036B1F7 /* LeapObjectiveC.mm */,
+				E26BA65C16DD33C80036B1F7 /* Sample.h */,
+				E26BA65D16DD33C80036B1F7 /* Sample.m */,
+			);
+			name = Leap;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +139,7 @@
 				E26BA63316DD33240036B1F7 /* Sources */,
 				E26BA63416DD33240036B1F7 /* Frameworks */,
 				E26BA63516DD33240036B1F7 /* Resources */,
+				E26BA66616DD369C0036B1F7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -154,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26BA66516DD34830036B1F7 /* libLeap.dylib in Resources */,
 				E26BA64516DD33240036B1F7 /* InfoPlist.strings in Resources */,
 				E26BA64B16DD33240036B1F7 /* Credits.rtf in Resources */,
 				E26BA65116DD33240036B1F7 /* MainMenu.xib in Resources */,
@@ -162,13 +191,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E26BA66616DD369C0036B1F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# print some debug information\necho TARGET_BUILD_DIR=${TARGET_BUILD_DIR}\necho TARGET_NAME=${TARGET_NAME}\ncd ${TARGET_BUILD_DIR}/${TARGET_NAME}.app/Contents/MacOS\nls -la\n# then remap the loader path\ninstall_name_tool -change @loader_path/libLeap.dylib @executable_path/../Resources/libLeap.dylib ${TARGET_NAME}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E26BA63316DD33240036B1F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26BA66216DD33E00036B1F7 /* LeapObjectiveC.mm in Sources */,
 				E26BA64716DD33240036B1F7 /* main.m in Sources */,
 				E26BA64E16DD33240036B1F7 /* APAppDelegate.m in Sources */,
+				E26BA65E16DD33C80036B1F7 /* Sample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,10 +311,15 @@
 		E26BA65516DD33240036B1F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirPiano/AirPiano-Prefix.pch";
 				INFOPLIST_FILE = "AirPiano/AirPiano-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -276,10 +328,15 @@
 		E26BA65616DD33240036B1F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirPiano/AirPiano-Prefix.pch";
 				INFOPLIST_FILE = "AirPiano/AirPiano-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -304,6 +361,7 @@
 				E26BA65616DD33240036B1F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
