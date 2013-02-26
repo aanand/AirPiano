@@ -9,7 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "LeapObjectiveC.h"
 
-@interface Sample : NSObject<LeapListener>
+@class FingertipListener;
+
+@protocol FingertipListenerDelegate <NSObject>
+
+-(void)fingertipListener:(FingertipListener *)listener didDetectFingertipsAtPositions:(NSArray *)positions;
+
+@end
+
+@interface FingertipListener : NSObject<LeapListener>
+
+@property (weak, nonatomic) id<FingertipListenerDelegate> delegate;
 
 -(void)run;
 

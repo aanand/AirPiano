@@ -7,14 +7,23 @@
 //
 
 #import "APAppDelegate.h"
-#import "Sample.h"
+#import "FingertipListener.h"
+
+@interface APAppDelegate () <FingertipListenerDelegate>
+@end
 
 @implementation APAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    Sample *sample = [[Sample alloc]init];
-    [sample run];
+    FingertipListener *listener = [[FingertipListener alloc]init];
+	listener.delegate = self;
+    [listener run];
+}
+
+-(void)fingertipListener:(FingertipListener *)listener didDetectFingertipsAtPositions:(NSArray *)positions
+{
+	NSLog(@"fingertips: %@", [positions componentsJoinedByString:@", "]);
 }
 
 @end
