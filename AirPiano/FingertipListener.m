@@ -65,7 +65,9 @@
 		}
 	}
 	
-	if (positions.count > 0 || !lastFrameWasEmpty) {
+	if (positions.count == 0 && lastFrameWasEmpty) {
+		// do nothing; no point sending multiple "no fingertips" messages
+	} else {
 		[self.delegate fingertipListener:self didDetectFingertipsAtPositions:positions];
 	}
 	
