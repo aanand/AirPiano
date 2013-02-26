@@ -33,8 +33,8 @@
 		E26BA64C16DD33240036B1F7 /* APAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APAppDelegate.h; sourceTree = "<group>"; };
 		E26BA64D16DD33240036B1F7 /* APAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APAppDelegate.m; sourceTree = "<group>"; };
 		E26BA65016DD33240036B1F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		E26BA65C16DD33C80036B1F7 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sample.h; path = AirPiano/Sample.h; sourceTree = "<group>"; };
-		E26BA65D16DD33C80036B1F7 /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sample.m; path = AirPiano/Sample.m; sourceTree = "<group>"; };
+		E26BA65C16DD33C80036B1F7 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		E26BA65D16DD33C80036B1F7 /* Sample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sample.m; sourceTree = "<group>"; };
 		E26BA66716DD37590036B1F7 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = Leap/libLeap.dylib; sourceTree = "<group>"; };
 		E26BA66916DD37600036B1F7 /* Leap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leap.h; path = Leap/Leap.h; sourceTree = "<group>"; };
 		E26BA66A16DD37600036B1F7 /* LeapMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeapMath.h; path = Leap/LeapMath.h; sourceTree = "<group>"; };
@@ -98,6 +98,8 @@
 			children = (
 				E26BA64C16DD33240036B1F7 /* APAppDelegate.h */,
 				E26BA64D16DD33240036B1F7 /* APAppDelegate.m */,
+				E26BA65C16DD33C80036B1F7 /* Sample.h */,
+				E26BA65D16DD33C80036B1F7 /* Sample.m */,
 				E26BA64F16DD33240036B1F7 /* MainMenu.xib */,
 				E26BA64116DD33240036B1F7 /* Supporting Files */,
 			);
@@ -123,8 +125,6 @@
 				E26BA66A16DD37600036B1F7 /* LeapMath.h */,
 				E26BA66B16DD37600036B1F7 /* LeapObjectiveC.h */,
 				E26BA66C16DD37600036B1F7 /* LeapObjectiveC.mm */,
-				E26BA65C16DD33C80036B1F7 /* Sample.h */,
-				E26BA65D16DD33C80036B1F7 /* Sample.m */,
 			);
 			name = Leap;
 			sourceTree = "<group>";
